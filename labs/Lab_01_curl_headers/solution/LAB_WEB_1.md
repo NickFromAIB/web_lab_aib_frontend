@@ -22,6 +22,7 @@ Set-Cookie: wire=64ec13a06e099ed48dd5879543610af7; path=/; HttpOnly; SameSite=La
 Expires: Thu, 19 Nov 1981 08:52:00 GMT - *Заголовок управления кэшированием, указывающий, что ресурс истек и не должен храниться в кэше*
 Cache-Control: no-store, no-cache, must-revalidate - *Заголовок управления кэшированием, указывающий, что ответ не должен кэшироваться и должен быть повторно подтвержден перед каждым использованием*
 Pragma: no-cache - *Дополнительный заголовок, который сообщает клиенту, что кэширование данного ответа запрещено*
+
 ---
 
 # GitHub
@@ -50,6 +51,7 @@ Set-Cookie: _octo=GH1.1.717263505.1694874601; Path=/; Domain=github.com; Expires
 Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Mon, 16 Sep 2024 14:30:01 GMT; HttpOnly; Secure; SameSite=Lax
 Accept-Ranges: bytes - *Этот заголовок указывает, что сервер поддерживает диапазоны запросов для данного ресурса*
 X-GitHub-Request-Id: 0444:5553:16E76F80:17357C55:6505BBE9 - *Заголовок содержит идентификатор запроса, который может быть полезен для отслеживания запроса на стороне сервера*
+
 ---
 # РЖД
 
@@ -83,6 +85,7 @@ Via: nginx1 - *Этот заголовок указывает на прокси-
 X-Frame-Options: sameorigin
 Set-Cookie: session-cookie=178568a0063f15f07e32755718991a240df1657e58509efd1d2a2f2228f4644b435720f7604a0403cc83ca46f06be496; Max-Age=86400; Path=/; secure
 X-XSS-Protection: 1; mode=block
+
 ---
 # Я
 Дополнительно использовалось - `--User-agent "Yandex"`
@@ -148,6 +151,7 @@ X-Cache-Hits: 3, 4
 X-Timer: S1694878842.574546,VS0,VE0
 Vary: Cookie
 Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+
 ---
 # Git
 
@@ -179,6 +183,7 @@ CF-Cache-Status: HIT
 Age: 5595
 Server: cloudflare
 CF-RAY: 807a398d7cd97b37-DME
+
 ---
 # JetBrains
 
@@ -231,6 +236,7 @@ Set-Cookie: cf_country-region=RU-ROS; Domain=jetbrains.com; Path=/; Secure
 X-Cache: Hit from cloudfront
 X-Amz-Cf-Pop: HEL50-C1
 X-Amz-Cf-Id: CU7VykNy5t9et5Tp3GTJa3WrCqfMUeGkNiX-nbfams48MQgDsrDfrA==
+
 ---
 # VSC
 
@@ -253,6 +259,7 @@ Strict-Transport-Security: max-age=31536000; includeSubDomains
 Content-Security-Policy: frame-ancestors 'self'
 X-Frame-Options: SAMEORIGIN
 X-XSS-Protection: 1; mode=block
+
 X-Content-Type-Options: nosniff
 X-Content-Type-Options: nosniff
 X-Powered-By: ASP.NET
