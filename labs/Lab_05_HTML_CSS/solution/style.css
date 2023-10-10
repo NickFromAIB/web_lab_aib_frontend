@@ -118,8 +118,8 @@ main {
         width: 100%;
     }
     .promo-catalog {
-        align-items: center;
         display:grid;   grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
     }
     .promo-catalog .item{
         margin: 0 12px;
