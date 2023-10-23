@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>JS</title>
+</head>
+<body>
+<script>
+console.log("ПЕРВОЕ ЗАДАНИЕ");
+
+let apple = 10;
+alert(apple);
+console.log(apple);
+
+let characters = 'QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm<>0123456789!№()*?:%;';
+let rand = Math.floor(Math.random() * 20) + 1;
+let condition = '';
+for (let i = 0; i < rand; i++) {
+    condition += characters[Math.floor(Math.random() * characters.length)];
+}
+
+console.log('Good game is ' + condition);
+/*
+ВОПРОСЫ
+
+Через какой оператор Вы объявили переменую?
+Через оператор let.
+
+Какие доступны операторы для объявления переменных? В чём их отличия?
+3 оператора для объявления переменных:
+  let - локальная переменная, область видимости которой ограничена блоком, в котором она объявлена
+  const - константа, значение которой не может быть изменено
+  var - устаревший оператор, который может вызывать ошибки в современных браузерах
+
+Что происходит при вызове alert()?
+отображается всплывающее окно с сообщением, переданным в качестве аргумента
+
+Как Вы думаете для чего может использоваться console.log()?
+для вывода информации в консоль браузера
+*/
+
+console.log("ВТОРОЕ ЗАДАНИЕ");
+
+let a = 123;
+let str = '100';
+let bool = false;
+
+console.log(a + str);
+console.log(str + a);
+console.log(bool + str);
+console.log(a + str + bool);
+console.log(str + a + bool);
+console.log(bool + a + str);
+
+console.log("ТРЕТЬЕ ЗАДАНИЕ");
+
+let array = [];
+for (let i = 0; i < 10; i++) {
+    array.push(Math.floor(Math.random() * 100) - 50);
+}
+console.log(array);
+array = array.filter((number) => number >= 0);
+console.log(array);
+
+console.log("ЧЕТВЕРТОЕ ЗАДАНИЕ");
+
+function getRandomNumber() {
+    return Math.floor(Math.random() * 100) + 1;
+}
+const randomNumber = getRandomNumber();
+console.log(randomNumber);
+
+function multiplyArray(array, number) {
+    const result = [];
+    for (let i = 0; i < array.length; i++) {
+        result.push(array[i] * number);
+    }
+    return result;
+}
+const array2 = [0, 1, 10, 20, -20, -10, -1, 0];
+console.log(array2);
+const new_array2 = multiplyArray(array2, 2);
+console.log(new_array2);
+
+const randWORD = () => {
+let ch = 'QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm';
+let r = Math.floor(Math.random() * 20) + 1;
+let word = '';
+for (let i = 0; i < r; i++) {
+    word += ch[Math.floor(Math.random() * ch.length)];
+}
+return word;
+}
+let word = randWORD();
+console.log(word);
+
+console.log("ПЯТОЕ ЗАДАНИЕ");
+const human = {};
+human.firstName = "Петр";
+human.surname = "Иванов";
+human.patronymic = "Алексеевич";
+human.birthday = "01.01.1000";
+human.hobby = "Пиво";
+human.group = "АИБ-1-000";
+
+human.inf = function() {
+let age = 2023 - this.birthday.split('.')[2];
+alert(`ФИО: ${this.firstName} ${this.surname} ${this.patronymic}
+Год рождения: ${this.birthday.split('.')[2]}
+Хобби: ${this.hobby}
+Возраст: ${age}`);
+}
+human.inf();
+
+const salaries = {};
+for (let i = 0; i < 10; i++) {
+    const surname = `${i + 1} cотрудник `;
+    const salary = 35000;
+    salaries[surname] = salary;
+}
+let total = 0;
+for (const surname in salaries) {
+    total += salaries[surname];
+}
+console.log("ЗП: " + total);
+</script>
+</body>
+</html>
