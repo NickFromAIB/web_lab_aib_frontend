@@ -9,6 +9,7 @@ class BaseXlsBlock(ABC):
         self.col = col
         self.data = data
 
+
     @abstractmethod
     def write_header(self):
         pass
